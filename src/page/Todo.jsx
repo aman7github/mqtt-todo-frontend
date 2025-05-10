@@ -83,9 +83,8 @@ const clientRef = useRef(null)
         },1000);
 
      }else{
-
-        console.log('MQTT client not connected')
-        setErrorMsg('MQTT client not connected') 
+        console.log('Mqtt client not connected')
+        setErrorMsg('Mqtt client not connected') 
      }
 
 
