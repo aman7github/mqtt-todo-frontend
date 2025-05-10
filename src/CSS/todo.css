@@ -171,6 +171,17 @@
 
 
 
+.error-box {
+  color: red;
+  background-color: #ffe5e5;
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+
+
 
 
 
@@ -244,11 +255,14 @@
 }
 .MainContainer{
   width: 92%; 
+
 }
 .listBoxContainer{
       width: 100%;
+      margin-top: 8.8rem;
   
 }
+
 
 .input-button-container{
     width:100%;
@@ -286,6 +300,7 @@
 }
 .MainContainer{
   width: 94%; 
+
 }
  .container {
   width: 81%;
