@@ -51,3 +51,5 @@ Redis is cleared
 The frontend fetches and displays tasks from both Redis and MongoDB.
 
 📸 Screenshots to Submit
+![Screenshot (431)](https://github.com/user-attachments/assets/3bfe0b1c-9876-448f-8cd6-29de4488e7fd)
+
