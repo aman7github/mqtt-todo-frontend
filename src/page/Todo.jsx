@@ -66,7 +66,7 @@ const clientRef = useRef(null)
 
    const handleClick=()=>{
        const trimmed = text.trim();
-    // Validation reject if empty or only numbers/special chars
+    // Validation reject if empty or only numbers/special characters
     if (!trimmed || /^[\W\d_]+$/.test(trimmed)) {
       alert('Please enter a valid task (not empty, not only numbers or special characters)');
       return;
@@ -83,8 +83,8 @@ const clientRef = useRef(null)
         },1000);
 
      }else{
-        console.log('Mqtt client not connected')
-        setErrorMsg('Mqtt client not connected') 
+        console.log('MQTT client not connected')
+        setErrorMsg('MQTT client not connected') 
      }
 
 
