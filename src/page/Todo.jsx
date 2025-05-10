@@ -15,7 +15,7 @@ const clientRef = useRef(null)
 
     useEffect(()=>{
      
-        clientRef.current = mqtt.connect('ws://broker.hivemq.com:8000/mqtt')
+        clientRef.current = mqtt.connect('wss://broker.hivemq.com:8000/mqtt')
 
         clientRef.current.on('connect',()=>{
          console.log('connected to mqtt');
