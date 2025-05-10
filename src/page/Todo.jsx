@@ -15,7 +15,7 @@ const clientRef = useRef(null)
 
     useEffect(()=>{
      
-        clientRef.current = mqtt.connect('wss://broker.hivemq.com:8000/mqtt')
+        clientRef.current = mqtt.connect('wss://test.mosquitto.org:8081')
 
         clientRef.current.on('connect',()=>{
          console.log('connected to MQTT');
@@ -42,9 +42,9 @@ const clientRef = useRef(null)
     },[])
  
 //localhost:5000/fetchAllTasks
-
+//https://mqtt-todo-backend.onrender.com/fetchAllTasks
    const getData=()=>{
-    fetch(`https://mqtt-todo-backend.onrender.com/fetchAllTasks`)
+    fetch(`http://localhost:5000/fetchAllTasks`)
     .then(res=>res.json())
     .then(res=>{
          let d = res.allTask.reverse()
