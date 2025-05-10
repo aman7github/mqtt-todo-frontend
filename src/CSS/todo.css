@@ -22,7 +22,7 @@
     position: fixed;
     min-height: 7rem;
     z-index: 80;
-    /* border: 1px solid rgb(204, 209, 212); */
+   
 }
 
 .container {
@@ -44,7 +44,6 @@
     justify-content: left;
     align-items: center;
     /* border:1px solid black; */
- 
     width:90%;
     height:3rem;
     margin: 0 auto;
