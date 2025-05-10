@@ -18,7 +18,7 @@ const clientRef = useRef(null)
         clientRef.current = mqtt.connect('wss://broker.hivemq.com:8000/mqtt')
 
         clientRef.current.on('connect',()=>{
-         console.log('connected to mqtt');
+         console.log('connected to MQTT');
           setErrorMsg('')
         }) 
 
