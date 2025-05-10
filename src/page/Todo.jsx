@@ -58,6 +58,8 @@ const clientRef = useRef(null)
    }
 
 
+
+
    const handleChange=(e)=>{
     setText(e.target.value)
    }
@@ -84,7 +86,7 @@ const clientRef = useRef(null)
 
      }else{
         console.log('MQTT client not connected')
-        setErrorMsg('mqtt client not connected check') 
+        setErrorMsg('mqtt client not connected') 
      }
 
 
