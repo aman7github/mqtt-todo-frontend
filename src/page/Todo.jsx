@@ -41,10 +41,10 @@ const clientRef = useRef(null)
 
     },[])
  
-//localhost:5000/fetchAllTasks
+//http://localhost:5000/fetchAllTasks
 //https://mqtt-todo-backend.onrender.com/fetchAllTasks
    const getData=()=>{
-    fetch(`http://localhost:5000/fetchAllTasks`)
+    fetch(`https://mqtt-todo-backend.onrender.com/fetchAllTasks`)
     .then(res=>res.json())
     .then(res=>{
          let d = res.allTask.reverse()
