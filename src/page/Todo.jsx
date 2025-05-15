@@ -15,7 +15,11 @@ const clientRef = useRef(null)
 
     useEffect(()=>{
      
-        clientRef.current = mqtt.connect('wss://test.mosquitto.org:8081')
+       
+      
+        clientRef.current = mqtt.connect('wss://broker.hivemq.com:8884/mqtt', {
+             reconnectPeriod: 0  // disables auto-reconnect
+         })
 
         clientRef.current.on('connect',()=>{
          console.log('connected to MQTT');
